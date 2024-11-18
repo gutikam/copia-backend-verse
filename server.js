@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
 
 // Ruta para manejar el envío de contacto
 app.post("/api/contact", async (req, res) => {
+  res.status(200).send("Al menos el servidor está funcionando 👌");
   const { nombreCompleto, email, mensaje } = req.body;
 
   // Configurar Nodemailer
